@@ -67,7 +67,7 @@ class Characters(Game):
                     self.isRunning = False
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_LEFT:
-                        self.geistX_change = -0.3
+                        self.geistX_change = -0.15
                         self.geistDir = self.geistLeft
                         self.pacmanX_change = -0.25
                         self.pacmanDir = self.pacmanLeft
@@ -78,7 +78,7 @@ class Characters(Game):
                         self.pacman3Y_change = -0.25
                         self.pacman3Dir = self.pacmanUp
                     if event.key == pygame.K_RIGHT:
-                        self.geistX_change = 0.3
+                        self.geistX_change = 0.15
                         self.geistDir = self.geistRight
                         self.pacmanX_change = 0.25
                         self.pacmanDir = self.pacmanRight
@@ -89,7 +89,7 @@ class Characters(Game):
                         self.pacman3Y_change = 0.25
                         self.pacman3Dir = self.pacmanDown
                     if event.key == pygame.K_DOWN:
-                        self.geistY_change = 0.3
+                        self.geistY_change = 0.15
                         self.geistDir = self.geistDown
                         self.pacmanY_change = 0.25
                         self.pacmanDir = self.pacmanDown
@@ -100,7 +100,7 @@ class Characters(Game):
                         self.pacman3X_change = -0.25
                         self.pacman3Dir = self.pacmanLeft
                     if event.key == pygame.K_UP:
-                        self.geistY_change = -0.3
+                        self.geistY_change = -0.15
                         self.geistDir = self.geistUp
                         self.pacmanY_change = -0.25
                         self.pacmanDir = self.pacmanUp
